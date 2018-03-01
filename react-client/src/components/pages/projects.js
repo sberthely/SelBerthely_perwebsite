@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 //import { Document, Page } from 'react-pdf/build/entry.webpack';
-import { Document } from 'react-pdf';
+//import { Document } from 'react-pdf';
 
 
 class Projects extends Component {
