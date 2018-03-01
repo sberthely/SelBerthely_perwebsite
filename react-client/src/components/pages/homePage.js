@@ -4,7 +4,7 @@ class HomePage extends Component {
   render() {
     return (
       <div>
-        Home page
+        Selenne Berthely - Home page
       </div>
     )
   }
