@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 //import { Document, Page } from 'react-pdf/build/entry.webpack';
-//import { Document } from 'react-pdf';
 
 // <Document file="CV.pdf" onLoadSuccess={this.onDocumentLoad}>
 // </Document>
@@ -8,19 +7,34 @@ import React, { Component } from 'react';
 // </Document>
 
 class Projects extends Component {
-
-    render() {
-
-      return (
-        <div>
-          <iframe src="https://docs.google.com/document/d/1gj8cRxuVeION8P9XmxrXTa2SmubDtC3L_1j28c0eKz4/edit" width="100%" height="400">
-          </iframe>
-
+  render() {
+    return (
+      <div className="Projects section flex-container">
+        <div className="item">
+          <h3>My CV</h3>
+          <iframe src="https://drive.google.com/file/d/1tL91tdN8pRoP71uhbUudg67T6zjUC0D1/preview" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
         </div>
-      );
-    }
-
+        <div className="item">
+          <h3>A Digital Currency for Mexico</h3>
+          <iframe src="https://drive.google.com/file/d/1GeMjIwWRdPtjpXrR7LPtQWek35btuJbU/preview" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div className="item">
+          <h3>Holdings of Mexican Securities since 2008</h3>
+          <iframe src="https://drive.google.com/file/d/1NKl7W-4tLK9WbAkZgRO2-IopqgJ8zW37/preview" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div className="item">
+          <h3>Evolution of Payment methods</h3>
+          <iframe src="https://drive.google.com/file/d/1NUNWeYeylqAicQFVY52pxQhi1eCEgLVC/preview" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div className="item">
+          <h3>An Algorithmic Approach to Movie Rating Classification using Natural Language Processing</h3>
+          <iframe src="https://drive.google.com/file/d/1BpPaQBZZ7Vi-oPGrUZBDnLPQ5QYjdjY0/preview" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    );
+  }
 }
+
 
 //Shows "Loading PDF", and then "Failed to load PDF"
 // class Projects extends Component {

@@ -1,39 +1,364 @@
-header {
+
+.App {
+  background-image: url('../src/images/wormz.png');
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 50px;
+  line-height: 30px;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 50px;
+  line-height: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+div#crypto_container{
+  background: lightgrey;
+  width: 50%;
+  margin: 0 auto 2px auto;
+  padding: 2px;
+  box-shadow: 2px 2px 0 grey;
+}
+
+span.left_span{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+span.right_span{
+  font-size: 16px;
+  float: center;
+  /* text-align: right; */
+}
+
+.section {
+  padding: 50px;
+
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  position: relative;
+  width: 40%;
+  margin: 10px;
+}
+
+.thumb {
   display: block;
-  background-color: black;
   width: 100%;
-  height: 50px;
+  height: auto;
+  transition: .5s ease;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  opacity: .9;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.item:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.traveling-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #bafffc;
+  border-radius: 5px;
+}
+
+.item:hover .traveling-overlay {
+  height: 100%;
+  opacity: 1;
+}
+
+.item:hover .thumb {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  white-space: nowrap;
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.text a {
+  color: #00c8c8;
+  text-decoration: none;
+}
+
+.heading {
+  margin-top: 50px;
+}
+
+.Homepage {
+  display: flex;
+  background-color: #FFF;
+  height: 100vh;
+  padding-left: 75px;
+  padding-right: 75px;
+  align-items: center;
+  /*text-align: center;*/
+  justify-content: center;
+}
+
+.Homepage .i-hov {
+  color: black;
+  margin: 10px;
+  display: inline-block;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.Homepage .i-hov:hover {
+  color: #00f2e7;
+  display: inline-block;
+}
+
+.Homepage button {
+  font-family: "Montserrat", sans-serif;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 10px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.Homepage button:hover {
+    background-color: #00f2e7;
+    border: 2px solid;
+    border-color: #00f2e7;
+    color: white;
+}
+
+.down-arrow {
+  background-color: white;
+}
+
+.main-pic {
+  border-radius: 50%;
+  width: 28vw;
+  padding: 20px;
+}
+
+.homepage-intro {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+}
+
+.homepage-intro strong {
+  font-weight: 900;
+}
+
+.Projects {
+  background-color: #FFF;
+}
+
+.Traveling {
+  background-color: #FFF;
+}
+
+.Hobbies {
+  background-image: url(../images/YosemLarge.png);
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  background-position: bottom;
+  height: 600px;
+}
+
+.hobbies-intro {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  color: white;
+  font-size: 40px;
+}
+
+.hobbies-intro strong {
+  font-weight: 900;
   color: white;
 }
 
-#headerButtons {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.hobbies-item a {
+  color: white;
+  text-decoration: none;
 }
 
-.navButton {
+.hobbies-item {
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  color: white;
+  padding: 10px 40px;
+}
+
+.hobbies-item strong {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: white;
+}
+
+.Hobbies span {
+  text-decoration: underline;
+}
+
+.NavBar {
+  list-style-type: none;
+  width: 100%;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  /*border: 1px solid #e7e7e7;*/
+  background-color: #f1f1f1;
+  z-index: 500;
+}
+
+.nav-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
   float: right;
 }
 
-footer {
-  display: block;
-  width: 100%;
-  height: 50px;
-  background-color: black;
-  color: white;
+.nav-last {
+  margin-right: 60px;
 }
 
-.image-item img{
+.nav-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 36px;
+  display: block;
+  margin-left: 60px;
+  color: black;
+  text-align: center;
+  padding: 7px 8px;
+  text-decoration: none;
+  float: left;
+}
+
+.nav-link {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.nav-link:hover:not(.active) {
+  background-color: #bafffc;
+  color: #16223C;
+}
+
+.nav-link.active {
+  color: white;
+  background-color: #4CAF50;
+}
+
+.Footer {
+  list-style-type: none;
+  height: 50vh;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  z-index: 500;
+  background: #bafffc;
+  background: -webkit-linear-gradient(to right, #bafffc, #f1f1f1);
+  background: linear-gradient(to right, #bafffc, #f1f1f1);
+  display: grid;
+  grid-template-columns: 10% 30% 50% 10%;
+}
+
+.Footer div {
+  text-align: center;
+}
+
+.Footer img {
+  padding: 15px 0px;
+  width: 100%
+}
+
+.Footer a {
+  text-decoration: none;
+  color: black;
+  line-height: 10px;
+  font-size: 18px;
+}
+
+.Footer h3 {
+  font-size: 30px;
+  line-height: 10px;
+}
+
+.video-item img{
   max-width: 64px;
 }
 
-.image-detail .details {
+.video-detail .details {
   margin-top: 10px;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
+
 .list-group-item {
   cursor: pointer;
 }
